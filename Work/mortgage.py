@@ -28,7 +28,8 @@ def main():
 
         principal = principal * (1+rate/12) - this_payment
         total_paid = total_paid + this_payment
-        print(month, round(total_paid, 2), round(principal, 2))
+        #print(month, round(total_paid, 2), round(principal, 2))
+        print(f'Month {month} Amount paid to date {round(total_paid, 2)} Remaining Principal {round(principal, 2)} ')
 
     print('Total paid', round(total_paid, 2), 'over', month, 'months')
 
